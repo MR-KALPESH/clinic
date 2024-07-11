@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shree Clinic SKin & chid Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Manage your hospital and clinic operations efficiently with CareWave Plus, a powerful Laravel-based system for healthcare institutions. Streamline patient records, appointments, billing, and more."
+    />
+    <meta
+      name="keywords"
+      content="CareWave Plus, Hospital Management, Clinic Management, Laravel System, Healthcare Software"
+    />
+    <meta name="author" content="Themesbrand" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- App css -->
+    <link
+      href="css/bootstrap.min.css"
+      id="bootstrap-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/app.min.css"
+      id="app-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="landing-page">
+      <!-- header nav bar start  -->
+      <header>
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-custom sticky sticky-light"
+          id="navbar"
+        >
+          <div class="container">
+            <a class="navbar-brand logo" href="#!">
+              <img src="images/logo-light.jpg" alt="" height="72" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#departments">Knowladge</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li> -->
+                
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="#reviews"> Book Appointment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faqs">FaQ's</a>
+                </li>
+              </ul>
+            
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header nav bar end  -->
+
+      <!-- home-section start -->
+      <section class="hero-section bg-img" id="home">
+        <div class="container">
+          <!-- row start  -->
+          <div
+            class="row align-items-center justify-content-between g-3 g-lg-5"
+          >
+            <div class="col-lg-5 align-self-start">
+              <div class="hero-content">
+                <div class="title-sm my-4">
+                  <h4 class="text-success">Certificated Doctors</h4>
+                </div>
+                <div class="hero-header">
+                  <h1 class="display-6 lh-base fw-medium">
+                    Search and find
+                    <span class="text-primary"> our clinic </span>for better
+                    solution
+                  </h1>
+                  <p>
+                    Expands Access To Care For Patients And Supports Community
+                    Health Staff And Junior Doctors. Consult With Online Doctors
+                    In Worldwide - Book Appointment With Doctors.
+                  </p>
+                </div>
+                <!-- <div class="hero-btn mt-4">
+                                    <a href="login.html" class="btn btn-primary"><i
+                                            class="mdi mdi-file-document-edit-outline me-2"></i>Make
+                                        an Appointment</a>
+                                </div> -->
+              </div>
+            </div>
+            <div class="col-lg-7 align-self-center">
+              <div class="img-part mx-auto" >
+                <img
+                style="margin-right: 5PX;"
+                  src="images/DC.png"
+                  alt="doctor"
+                  class="img-fluid img-width"
+                />
+                <div class="img-text text-center p-3 pb-1 rounded-3 z-n1">
+                  <i class="mdi mdi-ambulance"></i>
+                  <p class="my-2 fw-semibold">24 Hour Doctor</p>
+                  <div class="mb-3">
+                    <span>We Provide 24/7 Medical Services</span>
+                  </div>
+                </div>
+                <div class="img-text-1 text-start rounded-3 px-3 p-2">
+                  <i class="mdi mdi-doctor"></i>
+                  <div class="text">
+                    <p class="pt-2 pb-2 ms-4 fw-semibold mb-0">
+                      Best Doctor In Our Clinic
+                    </p>
+                    <div class="ms-4">
+                      <span>All Knowladge</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="img-text-2 text-center p-2 px-3 rounded-3">
+                  <i class="mdi mdi-cast-education"></i>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- row end  -->
+        </div>
+      </section>
+      <!-- home-section end  -->
+
+      <!-- services-section start  -->
+      <section class="section about-section bg-light" id="services">
+        <div class="container">
+          <!-- row start  -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="about-header text-center">
+                <h1>Health services for you</h1>
+                <p>We are always here to listening and understanding</p>
+              </div>
+            </div>
+          </div>
+          <!-- row end  -->
+          <div class="about-content mt-5">
+            <!-- row start  -->
+            <div class="row align-items-center justify-content-center g-4">
+              <div class="col-lg-2 col-md-6">
+                <div class="icon-text p-4 pb-3 text-center shadow">
+                  <i class="mdi"><img src="images/skin.svg" alt="" srcset="">
+                  </i>
+                  <p class="mt-4 fw-semibold">Skin Care</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="icon-text p-4 pb-3 bg-primary text-center shadow">
+                  <i class="mdi "><img src="images/Diabites.svg" alt="" srcset=""></i>
+                  <p class="mt-4 fw-semibold text-light">Diabites</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="icon-text p-4 pb-3 text-center shadow">
+                  <i class="mdi"><img src="images/Fever.svg" alt="" srcset=""></i>
+                  <p class="mt-4 fw-semibold">Fever</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="icon-text p-4 pb-3 bg-primary text-center shadow">
+                  <i class="mdi "> <img src="images/Medical.svg" alt="" srcset=""></i>
+                  <p class="mt-4 fw-semibold text-light">Medical</p>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="icon-text p-4 pb-3 text-center shadow">
+                  <i class="mdi "><img src="images/pediatrics.svg" alt=""></i>
+                  <p class="mt-4 fw-semibold">pediatrics</p>
+
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="icon-text p-4 pb-3 bg-primary text-center shadow">
+                  <i class="mdi "><img src="images/Research.svg" alt="" srcset=""></i>
+                  <p class=" mt-4 fw-semibold text-light">Research</p>
+
+                </div>
+              </div>
+            </div>
+            <!-- row end  -->
+          </div>
+        </div>
+      </section>
+      <!-- services-section end  -->
+
+      <!-- services-section start  -->
+      <section class="section services-section">
+        <div class="container">
+          <!-- row start  -->
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="about-header text-center">
+                <h1 class="lh-base">
+                  Why Choose
+                  <span class="text-primary">Shree Clinic Skin & chid </span>care ?
+                </h1>
+                <p>
+                  The medical profession is the most respected profession in the
+                  world. No matter where you work, you as a doctor
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- row end  -->
+          <div class="services-content mt-5">
+            <div class="row align-items-center justify-content-center g-4">
+              <div class="col-lg-3 col-md-6">
+                <div class="content-main bg-light p-4 rounded-3 shadow-sm">
+                  <i class="mdi mdi-medical-bag"></i>
+                  <h4 class="my-4 lh-base">Medical Advices &amp; Check Ups</h4>
+                  <!-- <a href="#!" class="text-primary fw-medium">Learn More</a> -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="content-main bg-light p-4 rounded-3 shadow-sm">
+                  <i class="mdi mdi-needle"></i>
+                  <h4 class="my-4 lh-base">Trusted Medical Treatment</h4>
+                  <!-- <a href="#!" class="text-primary fw-medium">Learn More</a> -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="content-main bg-light p-4 rounded-3 shadow-sm">
+                  <i class="mdi mdi-store-24-hour"></i>
+                  <h4 class="my-4 lh-base">Emergency Help Aveilable 24/7</h4>
+                  <!-- <a href="#!" class="text-primary fw-medium">Learn More</a> -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 ">
+                <div class="content-main bg-light p-4 rounded-3 shadow-sm">
+                  <i class="mdi mdi-doctor"></i>
+                  <h4 class="my-4 lh-base">Research Professional</h4>
+                  <!-- <a href="#!" class="text-primary fw-medium">Learn More</a> -->
+                </div>
+              </div>
+            </div>
+            <!-- row end  -->
+          </div>
+        </div>
+      </section>
+      <!-- services-section end  -->
+
+      <!-- features-section start  -->
+      <section class="features-section bg-light" id="features">
+        <div class="container">
+          <!-- row start  -->
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-5">
+              <div class="features-img">
+                <img src="images/dr_v.png" alt="doctor" class="img-fluid" />
+                <div class="img-text-2 text-center bg-white p-3 pb-3 rounded-3">
+                  <i class="mdi mdi-doctor"></i>
+                  <p class="mt-2 mb-0 fw-semibold">Dr.Prakash Vaniya</p>
+                  <span>Surat , Gujrat</span>
+                  <div class="hero-btn mt-3">
+                    <a href="https://practice.tatvacare.in/doctor_website/3h5qqh1_HWPGY1" target="_blank" class="btn btn-primary"
+                      ><i
+                        class="mdi mdi-file-document-edit-outline me-2 p-0 bg-primary fs-5 text-light"
+                      ></i
+                      >BooK Appointment </a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 align-self-start">
+              <div class="features-header pt-3">
+                <div class="title-sm">
+                  <h4 class="text-success">Our Features</h4>
+                </div>
+                <h1 class="lh-base mt-3">
+                  We are always ensure best
+                  <span class="text-primary">Medical treatment</span> for Your
+                  Health
+                </h1>
+                <p>
+                  Pain Management Treatment Options Pain and symptom management
+                  is one of the primary goals of palliative and hospice care
+                </p>
+              </div>
+              <div class="features-list d-flex mt-2">
+                <i class="mdi mdi-check-circle"></i>
+                <p class="pt-2 ms-4">Top Specialist Doctor</p>
+              </div>
+              <div class="features-list d-flex mt-2">
+                <i class="mdi mdi-check-circle"></i>
+                <p class="pt-2 ms-4">State of the art Doctor services</p>
+              </div>
+              <div class="features-list d-flex mt-2">
+                <i class="mdi mdi-check-circle"></i>
+                <p class="pt-2 ms-4">Discount for all medical treatment</p>
+              </div>
+              <div class="features-list d-flex mt-2">
+                <i class="mdi mdi-check-circle"></i>
+                <p class="pt-2 ms-4">Enrollment is Quick and easy</p>
+              </div>
+              <div class="feature-btn mt-3 mb-5">
+                <a href="https://practice.tatvacare.in/doctor_website/3h5qqh1_HWPGY1" target="_blank" class="btn btn-primary"
+                  ><i class="mdi mdi-file-document-edit-outline me-2"></i
+                  >Book Appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- row end  -->
+        </div>
+      </section>
+      <!-- features-section end  -->
+
+      <!-- departments-section start  -->
+      <section class="section department-section pb-4" id="departments">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <div class="department-header text-center">
+                <div class="title-sm">
+                  <h4 class="text-success">Our Knowladge</h4>
+                </div>
+                <h1 class="lh-base mt-3">
+                  We have all <span class="text-primary">Knowladge</span>
+                </h1>
+                <p>
+                  Dermatologists Have problems with your skin, hair, nails? ·
+                  Endocrinologists These are experts on hormones and metabolism.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 g-3">
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi"><img src="images/day_car.svg" alt="" srcset=""> </i>
+                  <h5 class="mt-1">Day Care</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-radiology-box"></i>
+                  <h5 class="mt-1">X-ray</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-heart-pulse"></i>
+                  <h5 class="mt-1">Cardiology</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-lungs"></i>
+                  <h5 class="mt-1"> Pulmonary</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-tooth"></i>
+                  <h5 class="mt-1">Dental Care</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-brain"></i>
+                  <h5 class="mt-1">Neurology</h5>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-needle"></i>
+                  <h5 class="mt-1">Medical</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-bone"></i>
+                  <h5 class="mt-1">Orthopadic</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-water"></i>
+                  <h5 class="mt-1">Blood Test</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-wheelchair-accessibility"></i>
+                  <h5 class="mt-1">Surgical</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-mother-nurse"></i>
+                  <h5 class="mt-1">Nursing</h5>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <a href="#!">
+                <div
+                  class="department-content text-center p-3 bg-light rounded-3 shadow-sm"
+                >
+                  <i class="mdi mdi-head-snowflake"></i>
+                  <h5 class="mt-1">Psychiarty</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- departments-section end  -->
+
+      <!-- doctors-section start  -->
+      <!-- <section class="section team-section" id="team">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <div class="department-header text-center">
+                <div class="title-sm">
+                  <h4 class="text-success">Our Doctor</h4>
+                </div>
+                <h1 class="lh-base mt-3">
+                  We Have Best <span class="text-primary">Doctor</span>
+                </h1>
+                <p>
+                  TeamDoctor provides organisations with an essential
+                  video-based online training course for all employees which
+                  gives a baseline of knowledge.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 align-items-center">
+            <div class="col-lg-12">
+              <div class="swiper mySwiper swiper-btn">
+                <div class="swiper-wrapper mb-5">
+                  <div class="swiper-slide">
+                    <div class="doctor-img shadow-sm p-3">
+                      <a href href="https://practice.tatvacare.in/doctor_website/3h5qqh1_HWPGY1" target="_blank">
+
+                      <img
+                        src="images/dr_v1.png"
+                        alt="doctor"
+                        class="img-fluid"
+                      />
+                      </a>
+                      <div class="doctor-detail mt-3 text-center">
+                        <h4>Dr. PRAKASH VANIYA</h4>
+                        <p>BHMS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="doctor-img shadow-sm p-3">
+                       <a href href="https://practice.tatvacare.in/doctor_website/3h5qqh1_HWPGY1" target="_blank">
+                      <img
+                        src="images/doctor-3.png"
+                        alt="doctor"
+                        class="img-fluid"
+                      />
+                      </a>
+
+                      <div class="doctor-detail mt-3 text-center">
+                        <h4>Dr. DHARMESH BHAYANI</h4>
+                        <p>BHMS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="doctor-img shadow-sm p-3">
+                      <img
+                        src="images/doctor-5.png"
+                        alt="doctor"
+                        class="img-fluid"
+                      />
+
+                      <div class="doctor-detail mt-3 text-center">
+                        <h4>Dr. JATIN LADUMOR</h4>
+                        <p>BHMS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="doctor-img shadow-sm p-3">
+                      <img
+                        src="images/doctor-6.png"
+                        alt="doctor"
+                        class="img-fluid"
+                      />
+
+                      <div class="doctor-detail mt-3 text-center">
+                        <h4>Dr. KAUSHIK GUJJAR</h4>
+                        <p>BHMS</p>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      
+      <!-- appoiment-section end  -->
+
+      <section class="section faq-section pb-3" id="faqs">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <div class="testimonial-header text-center">
+                <div class="title-sm">
+                  <h4 class="text-success">How To Contact ?</h4>
+                </div>
+                <h1 class="lh-base mt-3">
+                  Frequently Asked<span class="text-primary"> Questions</span>
+                </h1>
+                <p>
+                  How does Google protect my privacy and keep my information
+                  secure? We know security and privacy are important
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row align-items-center justify-content-between g-3 g-lg-5"
+          >
+            <div class="col-lg-6">
+              <h3 class="mb-5 text-muted text-decoration-underline">
+                Most Ask Questions :
+              </h3>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                    What are the clinic's operating hours and do you offer emergency services?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      It's essential to know when the clinic is open and whether they can handle urgent health issues outside regular hours.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                    What are the qualifications and specialties of the medical staff?</span>?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Understanding the expertise of the doctors and other healthcare professionals can help you feel more confident in the care you receive.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                    What types of services and treatments do you provide?
+                      
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Clinics can offer a range of services from general practice to specialized care. Knowing what's available can help you decide if the clinic meets your needs.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                    What is the process for scheduling appointments and how long is the typical wait time?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Knowing how to book appointments and the expected waiting time can help you plan your visits more effectively.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                    Do you accept my health insurance and what are the costs for services without insurance?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Understanding the financial aspect of your healthcare is crucial. This includes knowing if your insurance is accepted and the out-of-pocket costs for various services.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <img
+                src="images/Online%20Doctor-pana.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- cta-section start  -->
+      <section class="section cta-section bg-light pt-5" id="contact">
+        <div class="container">
+          <!-- row start  -->
+          <div
+            class="row align-items-center justify-content-center text-center"
+          >
+            <div class="col-lg-7">
+              <div class="cta-header">
+                <h1 class="lh-base mt-3">
+                  Health services or tips for
+                  <span class="text-primary"> Healthy Living</span>, you can
+                  find here
+                </h1>
+                <div class="cta-btn mt-5">
+                  <a href="#team" class="btn btn-primary"
+                    ><i class="mdi mdi-login-variant me-2"></i>Book Appointment</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end  -->
+        </div>
+      </section>
+      <!-- cta-section end  -->
+
+      <!-- footer-section start  -->
+      <footer class="section footer-section bg-dark">
+        <div class="container">
+          <!-- row start  -->
+          <div class="row justify-content-between g-2">
+            <div class="col-lg-4">
+              <a class="brand-logo" href="#!">
+                <img src="images/logo-light.jpg" alt="" height="50" />
+              </a>
+              <p class="mt-4 text-white-50">
+                Shree Clinic Skin & Child Care is our country's health insurance program for
+                people age 65 or older.
+              </p>
+              <div class="footer-btn mt-4">
+                <h5>Appointment :</h5>
+                <a href="https://practice.tatvacare.in/doctor_website/3h5qqh1_HWPGY1" target="_blank" class="btn btn-light">Book Appointment</a>
+              </div>
+            </div>
+
+            <div class="col-lg-2">
+              <h5>Facilities :</h5>
+              <ul>
+                <li>
+                  <a href="#!"
+                    ><i class="mdi mdi-chevron-right"></i> Hydra Facial</a
+                  >
+                </li>
+                <li>
+                  <a href="#!"
+                    ><i class="mdi mdi-chevron-right"></i> Hair PRP
+                  </a>
+                </li>
+                <li>
+                  <a href="#!"
+                    ><i class="mdi mdi-chevron-right"></i> Day Care</a
+                  >
+                </li>
+                <li>
+                  <a href="#!"
+                    ><i class="mdi mdi-chevron-right"></i> Medical</a
+                  >
+                </li>
+                <li>
+                  <a href="#!"
+                    ><i class="mdi mdi-chevron-right"></i> Lab Investigation</a
+                  >
+                </li>
+                <li>
+                  <a href="#!"
+                    ><i class="mdi mdi-chevron-right"></i> Video Consultation</a
+                  >
+                </li>
+                <li>
+                  <a href="#!"
+                    ><i class="mdi mdi-chevron-right"></i> Home Visit</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h5>Quick Links :</h5>
+              <ul>
+                <li>
+                  <a href="#home">
+                    <i class="mdi mdi-chevron-right"></i> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#services">
+                    <i class="mdi mdi-chevron-right"></i> Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#departments">
+                    <i class="mdi mdi-chevron-right"></i> Knowladge</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact">
+                    <i class="mdi mdi-chevron-right"></i> Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5>Contact Us :</h5>
+              <ul>
+                <li>
+                  <span class="text-white"
+                    ><span class="mdi mdi-map-marker font-size-18"></span>
+                  </span>
+                  <a
+                    href="https://maps.app.goo.gl/yK3GCP6v5LxJfhoK8"
+                    target="_blank"
+                    >Surat , Gujrat</a
+                  >
+                </li>
+                <li>
+                  <span class="text-white"
+                    ><span class="mdi mdi-email-outline font-size-18"></span>
+                  </span>
+                  <a
+                    href="mailto:drprakashvaniyashreeclinic@gmail.com"
+                    target="_blank"
+                    >drprakashshreeclinic@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <span class="text-white"
+                    ><span class="mdi mdi-phone-outline font-size-18"></span>
+                  </span>
+                  <a href="tel:+917567917445">+91 75679 17445</a>
+                </li>
+              </ul>
+              <div class="media-icon">
+                <ul class="list-inline d-flex flex-wrap social m-0">
+                  <li class="me-1">
+                    <a href="https://www.instagram.com/dr.prakash_shree_clinic/" target="_blank" class="social-icon"
+                      ><i class="mdi mdi-instagram"></i
+                    ></a>
+                  </li>
+             
+                  <li class="mx-1">
+                    <a
+                      href="https://www.google.com/search?q=shree+clinic+skin+%26+child+care&oq=s&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYOzIGCAMQRRg5MgYIBBBFGD0yBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxNjEyajBqMagCALACAA&sourceid=chrome&ie=UTF-8&lqi=Ch5zaHJlZSBjbGluaWMgc2tpbiAmIGNoaWxkIGNhcmVI_6yC8JG7gIAIWjgQABABEAIQAxAEEAUYABgBGAIYAxgEGAUiHnNocmVlIGNsaW5pYyBza2luICYgY2hpbGQgY2FyZZIBBmRvY3RvcqoBSBABMiAQASIcu3vL75QMGH_BXRT3xz1lgcVEP3BZ0rr0V79sQjIiEAIiHnNocmVlIGNsaW5pYyBza2luICYgY2hpbGQgY2FyZQ#lkt=LocalPoiReviews&rlimm=2543708217092321874"
+                      target="_blank"
+                      class="social-icon"
+                      ><i class="mdi mdi-google"></i
+                    ></a>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- row end  -->
+        </div>
+        <!-- container end  -->
+      </footer>
+      <!-- footer end  -->
+
+      <!-- footer-copyright start  -->
+      <div class="footer-copyright p-4">
+        <div class="container">
+          <div class="text-center">
+            <p class="text-white m-0">
+              All Rights Reserved © <span id="year"></span> By Shree Clinic Skin
+              & Child Care
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- footer-copyright end  -->
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- JAVASCRIPT -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/waves.min.js"></script>
+    <script src="js/toastr.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/landing.js"></script>
+  </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>
